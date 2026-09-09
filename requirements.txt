@@ -1,0 +1,10 @@
+# Core runtime deps
+openai>=1.0
+
+# Dev / test
+pytest>=7.0
+
+# Optional: semantic NLI tier in pilot/score_cascade.py (tier 3)
+# Install these only for local full-cascade runs; CI skips the NLI tier.
+# transformers>=4.40
+# torch>=2.0

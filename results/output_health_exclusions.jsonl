@@ -1,0 +1,17 @@
+{"model": "deepseek-v4-flash", "case_id": "canitedit:50:blank:fb8b6d2c8b98", "composition_event_id": "canitedit:50", "condition": "blank", "reason": "treated_response_unusable"}
+{"model": "deepseek-v4-flash", "case_id": "canitedit:51:blank:5c17302cf1ee", "composition_event_id": "canitedit:51", "condition": "blank", "reason": "treated_response_unusable"}
+{"model": "deepseek-v4-flash", "case_id": "canitedit:51:boundary:fc97ebb404df", "composition_event_id": "canitedit:51", "condition": "boundary", "reason": "treated_response_unusable"}
+{"model": "deepseek-v4-flash", "case_id": "canitedit:56:boundary:517d7ef14488", "composition_event_id": "canitedit:56", "condition": "boundary", "reason": "treated_response_unusable"}
+{"model": "deepseek-v4-flash", "case_id": "canitedit:79:blank:103a9066f527", "composition_event_id": "canitedit:79", "condition": "blank", "reason": "treated_response_unusable"}
+{"model": "deepseek-v4-flash", "case_id": "commitpackft:27ffcae96c5dce976517035b25a5c72f10e2ec99:tool_spatialdb.py:mitigation:d42109559d31", "composition_event_id": "commitpackft:27ffcae96c5dce976517035b25a5c72f10e2ec99:tool_spatialdb.py", "condition": "mitigation", "reason": "treated_response_unusable"}
+{"model": "deepseek-v4-pro", "case_id": "canitedit:79:boundary:fc82e938ffbb", "composition_event_id": "canitedit:79", "condition": "boundary", "reason": "treated_response_unusable"}
+{"model": "gemma-3-12b", "case_id": "stackexchange:37388025:blank:07a2fde4aa10", "composition_event_id": "stackexchange:37388025", "condition": "blank", "reason": "clean_control_unusable"}
+{"model": "gemma-3-12b", "case_id": "stackexchange:37388025:boundary:c0277ae3ac66", "composition_event_id": "stackexchange:37388025", "condition": "boundary", "reason": "clean_control_unusable"}
+{"model": "gemma-3-12b", "case_id": "stackexchange:37388025:mitigation:c7ef9232430b", "composition_event_id": "stackexchange:37388025", "condition": "mitigation", "reason": "clean_control_unusable"}
+{"model": "gemma-3-12b", "case_id": "stackexchange:37388025:newline:f8084d217051", "composition_event_id": "stackexchange:37388025", "condition": "newline", "reason": "clean_control_unusable"}
+{"model": "gpt-oss-20b", "case_id": "canitedit:38:blank:64383c287487", "composition_event_id": "canitedit:38", "condition": "blank", "reason": "clean_control_unusable"}
+{"model": "gpt-oss-20b", "case_id": "canitedit:38:boundary:8b9c6760df77", "composition_event_id": "canitedit:38", "condition": "boundary", "reason": "clean_control_unusable"}
+{"model": "gpt-oss-20b", "case_id": "canitedit:38:mitigation:cecbaeccf35d", "composition_event_id": "canitedit:38", "condition": "mitigation", "reason": "clean_control_unusable"}
+{"model": "gpt-oss-20b", "case_id": "canitedit:38:newline:47e06253ed8c", "composition_event_id": "canitedit:38", "condition": "newline", "reason": "clean_control_unusable"}
+{"model": "minimax-m2.5", "case_id": "canitedit:50:blank:fb8b6d2c8b98", "composition_event_id": "canitedit:50", "condition": "blank", "reason": "treated_response_unusable"}
+{"model": "minimax-m2.5", "case_id": "canitedit:50:boundary:67f551c24b7c", "composition_event_id": "canitedit:50", "condition": "boundary", "reason": "treated_response_unusable"}

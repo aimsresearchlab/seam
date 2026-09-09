@@ -1,0 +1,58 @@
+{
+  "cases": 600,
+  "fixture_checks": 2400,
+  "failures": [],
+  "canonical_nli_hypothesis_mismatches": [],
+  "counts": [
+    {
+      "condition": "register_casual",
+      "fixture": "mention_only",
+      "absorbed": false,
+      "n": 300
+    },
+    {
+      "condition": "register_casual",
+      "fixture": "non_absorption",
+      "absorbed": false,
+      "n": 300
+    },
+    {
+      "condition": "register_casual",
+      "fixture": "paraphrased_absorption",
+      "absorbed": true,
+      "n": 300
+    },
+    {
+      "condition": "register_casual",
+      "fixture": "verbatim_absorption",
+      "absorbed": true,
+      "n": 300
+    },
+    {
+      "condition": "register_native",
+      "fixture": "mention_only",
+      "absorbed": false,
+      "n": 300
+    },
+    {
+      "condition": "register_native",
+      "fixture": "non_absorption",
+      "absorbed": false,
+      "n": 300
+    },
+    {
+      "condition": "register_native",
+      "fixture": "paraphrased_absorption",
+      "absorbed": true,
+      "n": 300
+    },
+    {
+      "condition": "register_native",
+      "fixture": "verbatim_absorption",
+      "absorbed": true,
+      "n": 300
+    }
+  ],
+  "status": "pass",
+  "dataset_sha256": "50796b309ef59289da00024dff3e71d7e8bb3db82e062a65f9cfb1f08abb31e5"
+}
