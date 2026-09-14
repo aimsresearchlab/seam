@@ -51,7 +51,7 @@ code/tools/    dataset builders and the output-health audit
 code/wild/     wild-corpus mining and judging (code only, see DATA_LICENSES.md)
 code/tests/    regression tests for the scorer and builders
 results/       per-model case-level labels (51 files), exclusions, statistics
-docs/          scoring rules, manual-check log, result ledger
+docs/          scoring rules, manual-check log, result ledger, demo notes
 wild/          audit labels with message text removed (100 rows)
 ```
 
@@ -92,6 +92,14 @@ python3 code/seam/run_dataset.py benchmark/seam_v4_permissive.jsonl \
 Drop `--dry-run` to issue real calls. Decoding settings, provider routes, and
 the documented per-provider deviations are recorded in `docs/SCORES.md` and
 `docs/MANUAL_CHECKS.md`.
+
+## The interactive pages
+
+The walkthrough and leaderboard at
+[aimsresearchlab.com/seam/](https://aimsresearchlab.com/seam/) are static pages
+kept in the lab-site repo. [`docs/DEMO.md`](docs/DEMO.md) explains which repo
+holds what, how the sampled outputs behind the leaderboard rows are rebuilt, and
+how to recapture the figures in this README.
 
 ## Scope
 
