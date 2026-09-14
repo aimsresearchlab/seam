@@ -1,5 +1,14 @@
 # SEAM: absorption at unmarked within-turn seams
 
+<p align="center">
+  <img src="docs/img/worked-example.png" alt="One SEAM case in a chat UI: the same edit request under three seam conditions. With a bare newline and with a blank line the trailing comment comes back inside the revised passage; with boundary tags plus one instruction line it does not." width="620">
+</p>
+
+<p align="center">
+  <a href="https://aimsresearchlab.com/seam/">Walk through this example</a> ·
+  <a href="https://aimsresearchlab.com/seam/leaderboard.html">Leaderboard</a>
+</p>
+
 One user turn can flatten a task, a pasted artifact, and later typed speech
 into a single message. SEAM measures **absorption**: the model returns that
 trailing user speech *inside* the edited artifact, even though the speech is
@@ -14,6 +23,24 @@ Improve it.| Dear Alex, ...             | I still need coffee.
 
 The model sees only the flattened message. The benchmark keeps the segment
 boundaries private and checks whether the afterthought enters the deliverable.
+
+## Leaderboard
+
+<p align="center">
+  <img src="docs/img/leaderboard.png" alt="SEAM leaderboard: 20 models ranked by bare-newline absorption, from OLMo-2-32B at 66.7% down to Llama-3.1-8B at 7.7%, with columns for blank line, boundary tags, tags plus instruction, artifact-native comment, and the gain from marking the seam." width="100%">
+</p>
+
+Across **20 models from 11 labs** on 300 matched composition clusters:
+
+- Bare-newline absorption runs from **7.7%** (Llama-3.1-8B) to **66.7%** (OLMo-2-32B), and no model is at zero. Frontier systems sit in the middle: Claude-Opus-4.8 19.0%, Gemini-3.1-Pro 29.3%, GPT-5.6-sol 32.0%.
+- Adding a **blank line** gives no significant reduction in any model.
+- **Boundary markup** significantly reduces absorption in **19 of 20**.
+- **Artifact-native** continuations are absorbed more often in 19 of 20 (Holm-significant in 17), which reverses the apparent safety of code.
+
+Every rate, interval, and paired test above regenerates from `results/`; see
+[Reproducing the numbers](#reproducing-the-numbers). The interactive table is at
+[aimsresearchlab.com/seam/leaderboard.html](https://aimsresearchlab.com/seam/leaderboard.html),
+where each row opens that model's actual outputs on sampled prompts.
 
 ## Contents
 
