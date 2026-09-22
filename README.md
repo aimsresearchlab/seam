@@ -30,7 +30,7 @@ boundaries private and checks whether the afterthought enters the deliverable.
   <img src="docs/img/leaderboard.png" alt="SEAM leaderboard: 20 models ranked by bare-newline absorption, from OLMo-2-32B at 66.7% down to Llama-3.1-8B at 7.7%, with columns for blank line, boundary tags, tags plus instruction, artifact-native comment, and the gain from marking the seam." width="100%">
 </p>
 
-Across **20 models from 11 labs** on 300 matched composition clusters:
+Across **20 models from 10 labs** on 300 matched composition clusters:
 
 - Bare-newline absorption runs from **7.7%** (Llama-3.1-8B) to **66.7%** (OLMo-2-32B), and no model is at zero. Frontier systems sit in the middle: Claude-Opus-4.8 19.0%, Gemini-3.1-Pro 29.3%, GPT-5.6-sol 32.0%.
 - Adding a **blank line** gives no significant reduction in any model.
