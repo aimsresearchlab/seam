@@ -5,6 +5,8 @@
 </p>
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2610.04210">Paper (arXiv:2610.04210)</a> ·
+  <a href="https://huggingface.co/datasets/vein05/seam">Dataset on Hugging Face</a> ·
   <a href="https://aimsresearchlab.com/seam/">Walk through this example</a> ·
   <a href="https://aimsresearchlab.com/seam/leaderboard.html">Leaderboard</a>
 </p>
@@ -53,6 +55,16 @@ code/tests/    regression tests for the scorer and builders
 results/       per-model case-level labels (51 files), exclusions, statistics
 docs/          scoring rules, manual-check log, result ledger, demo notes
 wild/          audit labels with message text removed (100 rows)
+```
+
+The three `benchmark/` files are also on Hugging Face as
+[vein05/seam](https://huggingface.co/datasets/vein05/seam), one configuration
+per license partition (`permissive`, `cc-by-sa`, `cc-by-nc-sa`):
+
+```python
+from datasets import load_dataset
+
+seam = load_dataset("vein05/seam", "permissive", split="train")
 ```
 
 ## Reproducing the numbers
@@ -108,3 +120,21 @@ source weighting and repeated comment pools. It measures the unintended
 inclusion of benign user speech in a returned artifact. It contains no
 adversarial instructions and no executable payloads, and it does not establish
 behavior for sensitive content, other languages, or later conversational turns.
+
+## Citation
+
+SEAM is described in
+[Can LLMs Separate Pasted Artifacts from User Speech? Absorption at Unmarked Prompt Seams](https://arxiv.org/abs/2610.04210).
+
+```bibtex
+@misc{panthi2026seam,
+  title         = {Can {LLMs} Separate Pasted Artifacts from User Speech? Absorption at Unmarked Prompt Seams},
+  author        = {Panthi, Sugam and Yeamin, Muhaiminul and Abdelfattah, Rabab},
+  year          = {2026},
+  eprint        = {2610.04210},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  doi           = {10.48550/arXiv.2610.04210},
+  url           = {https://arxiv.org/abs/2610.04210}
+}
+```
